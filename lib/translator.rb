@@ -12,6 +12,7 @@ def load_library(path)
 # the emoticon keys inside the 'get_meaning' hash point to their meanings
 # the keys inside the 'get_emoticon' hash are the English emoticons
 # the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents
+
   library.each do |meaning, emoticons|
     lib_hash["get_meaning"][emoticons[1]] = meaning
     lib_hash["get_emoticon"][emoticons[0]] = emoticons[1]

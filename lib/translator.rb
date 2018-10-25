@@ -22,7 +22,8 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-  # code goes here
+  library = load_library(path)
+  library["get_emoticon"].has_key?(emoticon) ? library["get_emoticon"][emoticon] : "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning

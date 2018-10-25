@@ -5,10 +5,10 @@ require 'pry'
 def load_library(path)
   library = YAML.load_file(path)
   lib_hash = {"get_meaning" => {}, "get_emoticon" => {}}
-   library.each do |meaning, emoticons|
-     
+  library.each do |meaning, emoticons|
+    
   end
-   lib_hash
+  lib_hash
 end
 
 def get_japanese_emoticon
